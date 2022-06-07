@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: local
+
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test
+    username: sa
+    password:
+
+server:
+  port: 8090
+
+
+mybatis:
+  type-aliases-package: hello.itemservice.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+
